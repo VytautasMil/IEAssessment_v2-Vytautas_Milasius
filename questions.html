@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Bazaarvoice Implementation Engineer Technical Assessment</title>
+    <meta name="description" content="Technical Assessment given to API Implementation Engineer Applicants">
+    <meta name="author" content="Bazaarvoice">
+    <link type="text/css" rel="stylesheet" href="css/normalize.css">
+    <link type="text/css" rel="stylesheet" href="js/syntaxhighlighter/styles/shCore.css">
+    <link type="text/css" rel="stylesheet" href="js/syntaxhighlighter/styles/shThemeDefault.css">
+    <link type="text/css" rel="stylesheet" href="css/questions.css">
+    <link type="text/css" rel="stylesheet" href="css/answers.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div class="inner">
+                <h1>Implementation Engineer Technical Assessment<p style="float:right">Name: Vytautas Milasius</p></h1>
+                
+            </div>
+        </header>
+        <div id="instructions">
+            <div class="inner">
+                <h2>Instructions</h2>
+                <p>
+                    Thank you for interviewing at Bazaarvoice! This document serves as the Bazaarvoice Technical Assessment for Implementation Engineers. The purpose of this assessment is to gauge your fluency of the core toolset our engineers use on a daily basis.
+                </p>
+                <p>
+                    The areas we measure on are skill, knowledge, logic, and communication so even if you don't know how to write the code for a specific question, pseudo code or an explanation of your troubleshooting steps are better than leaving it blank.
+                </p>
+                <p>
+                    Please follow these guidelines:
+                </p>
+                <ul>
+                    <li>
+                        You may use online resources (e.g. <a href="http://www.google.com/">Google</a>.)
+                    </li>
+                    <li>
+                        You may not consult with any other person to assist you in this test.
+                    </li>
+                    <li>
+                        This page must render consistently in the latest stable (non-beta) version of Chrome, Firefox, Edge, and Safari.
+                    </li>
+                    <li>
+                        Provide your answers by editing this document within the <code>TODO</code> comments.
+                        <br/>
+                        <pre class="brush: html">
+                                &lt;div class=&quot;answer&quot;&gt;
+                                    &lt;p&gt;
+                                        &lt;span class=&quot;prefix&quot;&gt;Answer:&lt;/span&gt;
+                                    &lt;/p&gt;
+                                    &lt;!-- TODO - Begin Answer --&gt;
+
+                                    &lt;!-- End Answer --&gt;
+                                &lt;/div&gt;
+                            </pre>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="main" role="main">
+            <div class="info">
+                Questions A &amp; B are sample questions that have <b>already been answered.</b>
+                <br/> Read them closely and use their source code as an example of how to complete this test.
+            </div>
+            <p class="listPrefix">Example A</p>
+            <div id="sampleQuestionCssHtml" class="sampleQuestionContainer">
+                <div class="prompt">
+                    <p>
+                        <span class="prefix">Prompt:</span> Recreate text/formatting (excluding the border) depicted in the following image
+                    </p>
+                    <img src="img/sampleQuestion1.png" title="Use this image to guide your answer." />
+                </div>
+                <div class="answer">
+                    <p>
+                        <span class="prefix">Answer:</span>
+                    </p>
+                    <div class="sampleCode">
+                        <!-- 
+                            TODO - Begin Answer 
+                        -->
+                        <style type="text/css">
+                        #sampleQuestionCssHtml .sampleCode .edit {
+                            text-decoration: line-through;
+                        }
+                        .exampleQuestion {
+                            font-family: serif;
+                        }
+                        </style>
+                        <p class="exampleQuestion">
+                            When answering a question, there may be <em>more than one</em> possible answer. For example, similar results may be achieved by <strong>adding or modifying the html, adding
+                                styles inline, in a style tag or in answers.css.</strong>. In those situations you will need to <span class="edit">panic and guess randomly</span> use your own better judgment.
+                        </p>
+                        <p class="exampleQuestion">
+                            Relax, try to finish as much as you can in the time allotted and good luck!.
+                        </p>
+                        <!-- 
+                            End Answer
+                        -->
+                    </div>
+                </div>
+            </div>
+            <p class="listPrefix">Example B</p>
+            <div id="sampleQuestionJSComment" class="sampleQuestionContainer">
+                <div class="prompt">
+                    <p>
+                        <span class="prefix">Prompt:</span> : Comment out the following line:
+                    </p>
+                    <pre class="brush: js">
+                            Some questions require familiarity with JavaScript or jQuery.
+                            Others are open-ended.
+                            var exampleB = null;
+                        </pre>
+                </div>
+                <div class="answer">
+                    <p><span class="prefix">Answer:</span></p>
+                    <!-- 
+                        TODO - Begin Answer 
+                    -->
+                    <pre class="brush: js">
+                        // Some questions require familiarity with JavaScript or jQuery.
+                        // Others are open-ended.
+                        var exampleB = null;
+                    </pre>
+                    <!-- 
+                        End Answer
+                    -->
+                </div>
+            </div>
+            <div class="info">Your turn!</div>
+            <h2>Questions</h2>
+            <ol>
+                <li id="applicantName" class="questionContainer">
+                    <div class="prompt">
+                        <p>
+                            <span class="prefix">Prompt:</span> Add your name to this page and make it appear as shown in the following image:
+                        </p>
+                        <img src="img/applicantName.png" title="Use this image to guide your answer." />
+                    </div>
+                    <div class="answer">
+                        <p><span class="prefix">Answer:</span></p>
+                        <!--
+                                TODO - Begin Answer - For this question you will modify the document outside of the
+                                TODO, but be careful not to break anything!
+                        -->
+                        <div class="sampleCode">
+                            <div>Your name should appear at the top of this document as shown in the image.</div>
+                        </div>
+                        <!-- 
+                            End Answer
+                        -->
+                    </div>
+                </li>
+                <li id="consoleError" class="questionContainer">
+                    <div class="prompt">
+                        <p>
+                            <span class="prefix">Prompt:</span> Open your browser’s console. You should see an error.
+                            <ol type="a">
+                                <li>Identify the error and correct it.</li>
+                                <li>How would you explain what you did to a non-technical client?</li>
+                            </ol>
+                        </p>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            <span class="prefix">Answer:</span>
+                        </p>
+                        <!-- 
+                            TODO - Begin Answer 
+                        -->
+                        <p>You had a line of code that said, "console.log(Success!)" which didn't make sense because "Success!" was not defined. So, I replaced it with "console.log(question2)," which is a valid instruction to show the result of a specific action in your code because it was defined as a function.</p>  
+                        <!-- 
+                            End Answer
+                        -->
+                    </div>
+                </li>
+                <li id="cssOrder" class="questionContainer">
+                    <div class="prompt">
+                        <p>
+                            <span class="prefix">Prompt:</span> The text below is not displaying correctly.
+                            <style type="text/css">
+                            #cssOrder .joke {
+                                background: pink;
+                                padding: 1em;
+                            }
+
+                            .jokeAnswer {
+                                color: black !important;
+                            }
+                            </style>
+                            <div class="joke">
+                                <div class="jokeQuestion">Q: What is the object-oriented way to become wealthy?</div>
+                                <br>
+                                <div style="color: black;" class="jokeAnswer">A: Inheritance</div>
+                                <br>
+                                <div class="notDisplay">^^^ Answer should display</div>
+                            </div>
+                        </p>
+                        <p>
+                            <ol type="a">
+                                <li>Identify the error and correct it.</li>
+                                <li>How would you explain what you did to a non-technical client?</li>
+                            </ol>
+                        </p>
+                    </div>
+                    <!--prompt -->
+                    <div class="answer">
+                        <p>
+                            <span class="prefix">Answer:</span>
+                        </p>
+                        <!-- 
+                            TODO - Begin Answer 
+                        -->
+                        <p>In code terms, you had a conflict where the text color was hidden because it matched the background color. I fixed it by removing pink color that was applied to the text. </p>
+                        <!-- 
+                            End Answer
+                        -->
+                    </div>
+                </li>
+                <li id="apiDebugWeather" class="questionContainer">
+                    <div class="prompt">
+                        <p>
+                            <span class="prefix">Prompt:</span>
+                        </p> Mark, your client's web developer, has provided the following code snippet that "doesn't work". </p>
+                        <ol type="a">
+                            <li>Copy the code below and correct it.</li>
+                            <li>How would you explain what you did to a TECHNICAL client?</li>
+                        </ol>
+                        <pre class="brush: js; html-script: true">
+                                <!-- Copy this code into the answer block. -->
+                                $.ajax({
+                                url: 'https://api.weather.gov/gridpoints/EWX/155,90/forecast/hourly'
+                                }).done(function(res) {
+                                    var temp = res.properties.periods[0].temperature;
+                                });
+                                document.getelementbyid('temperature').innerHTML = temp
+                            </pre>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            <span class="prefix">Answer:</span>
+                        </p>
+                        <!-- 
+                            TODO - Begin Answer 
+                        -->
+                        <script type="text/javascript">
+                        // Copy Mark's broken code here. Repair it.
+                        <!-- Copy this code into the answer block. -->
+                        $.ajax({
+                        url: 'https://api.weather.gov/gridpoints/EWX/155,90/forecast/hourly'
+                        }).done(function(res) {
+                        var temp = res.properties.periods[0].temperature;
+                        document.getElementById('temperature').innerHTML = temp;
+                        });
+                        </script>
+                        <p>
+                            The temperature is <span id="temperature"></span>F in Austin TX
+                        </p>
+                        <br>
+                        <p>An error occurred due to a case-sensitive typo when using the getElementById method. Additionally, there was an issue with the variable temp not being accessible because it was declared outside of the function's scope. These two problems contributed to the error in the code.</p>
+                        <!-- 
+                            End Answer
+                        -->
+                    </div>
+                </li>
+                <li id="jsonOutput" class="questionContainer">
+                    <div class="prompt">
+                        <p>
+                            <span class="prefix">Prompt:</span> Below is an API URL.
+                            <pre class="brush: js; html-script: true">
+                                http://stg.api.bazaarvoice.com/data/reviews.json?apiversion=5.4&passkey=caB45h2jBqXFw1OE043qoMBD1gJC8EwFNCjktzgwncXY4&filter=Id:16970607&include=Products
+                                </pre> Write a function that accepts the URL and console logs a message with the following format:
+                            <pre class="brush: js; html-script: true">
+                                {UserNickname} from {UserLocation} gave this product a {Rating}. 
+                                example: John123 from Austin, TX gave this product a 5
+                                </pre>
+                        </p>
+                        <p>
+                            <b>Hint: Use the question above for reference.</b>
+                        </p>
+                        <div class="answer">
+                            <p>
+                                <span class="prefix">Answer:</span>
+                            </p>
+                            <!-- 
+                                TODO - Begin Answer 
+                            -->
+                            <script type="text/javascript">
+                                $.ajax({
+                        url: 'http://stg.api.bazaarvoice.com/data/reviews.json?apiversion=5.4&passkey=caB45h2jBqXFw1OE043qoMBD1gJC8EwFNCjktzgwncXY4&filter=Id:16970607&include=Products'
+                        }).done(function(res) {
+                        var UserNickname= res.Results[0].UserNickname;                        
+                        var UserLocation= res.Results[0].UserLocation;
+                        var Rating= res.Results[0].Rating;
+                        var sentence = `${UserNickname} from ${UserLocation} gave this product a ${Rating}.`;                       
+                        document.getElementById('sentence').innerHTML = sentence;
+                        });
+                            </script>
+                            <p id="sentence"></p>
+                            <!-- 
+                                End Answer
+                            -->
+                        </div>
+                </li>
+                <li id="cssIssue" class="questionContainer">
+                    <div class="prompt">
+                        <p>
+                            <span class="prefix">Prompt:</span> The overlay menu below looks broken.
+                        </p>
+                        <p>
+                            Identify the issue and explain it to the client. <b>Do not fix it yourself.</b>
+                          
+                        </p>
+                    </div>
+                    <div class="baseEl">
+                        <button>Toggle Menu</button>
+                        <div class="dropdownEl">
+                            <ul>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                                <li>Item 4</li>
+                                <li>Item 5</li>
+                                <ul>
+                        </div>
+                        <div class="textEl"><span style="font-weight:bold;">Lorem ipsum dolor sit amet</span>consectetur adipiscing elit. Quisque rhoncus rhoncus augue at aliquam. Sed sed faucibus mi. Suspendisse leo velit, molestie in dictum nec, accumsan id diam. Etiam sodales enim felis, eget eleifend lacus pharetra eget. Nam sed enim quam. Pellentesque ullamcorper iaculis lectus quis egestas. Integer fringilla sodales molestie. Ut et tempus lorem.</div>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            <span class="prefix">Answer:</span>
+                        </p>
+                        <!--TODO - Begin Answer -->
+                        <p>I've identified the issue with the menu overlaying on text. It's related to the z-index of the dropdownEl class, which is currently set to -1. This is causing the overlap problem. You need to increase the z-index value or remove it at all.</p>
+                        <!-- 
+                            End Answer
+                        -->
+                    </div>
+                </li>
+                <li id="rateLimit" class="questionContainer">
+                    <div class="prompt">
+                        <p>
+                            <span class="prefix">Prompt:</span> Below is a callback. Explain what that is and what are good uses for this JS pattern.
+                        </p>
+                        <pre class="brush: js">
+                            function sayTime(time) {
+                              alert('The time is ' + time);
+                            }
+
+                            function findTime(callback) {
+                              time = new Date()
+                              callback(time);
+                            }
+    
+                            findTime(sayTime);
+                        </pre>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            <span class="prefix">Answer:</span>
+                        </p>
+                        <!-- 
+                            TODO - Begin Answer 
+                        -->
+                        <p>A callback is like a helper function that you pass to another function. It's useful for tasks like showing the time, handling clicks, or doing different jobs when something happens. In your code, `findTime` gets the time and uses `sayTime` to display it. This way, you can change how the time is shown without touching the time-finding part.</p>
+                        <!-- 
+                            End Answer
+                        -->
+                    </div>
+                </li>
+                <li id="schemaOrg" class="questionContainer">
+                    <div class="prompt">
+                        <p>
+                            <span class="prefix">Prompt:</span> Enter the following code snippet in <a href="https://search.google.com/structured-data/testing-tool/u/0/">Google Data Testing Tool</a>. You should see an error. Using Google and this <a href="https://knowledge.bazaarvoice.com/wp-content/conversations/en_US/Display/display_integration.html#add-schema-org-markup-1">Knowledge Base article</a>, identify the error. How would you explain to the client the error?
+                        </p>
+                        <pre class="brush: html">
+                                &lt;body&gt;                                    
+                                     <div itemscope itemtype="https://schema.org/Product">
+                                        <h1>ProductName</h1>
+                                        <div id="bvseo-aggregateRatingSection" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                                            <span class="bvseo-itemReviewed" itemprop="itemReviewed">Catego for Cats</span> is rated
+                                            <span class="bvseo-ratingValue" itemprop="ratingValue">4.6</span> out of
+                                            <span class="bvseo-bestRating" itemprop="bestRating">5</span> by
+                                            <span class="bvseo-reviewCount" itemprop="reviewCount">27</span>
+                                        </div>
+                                    </div>      
+                                &lt;/body&gt;  
+                            </pre>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            <span class="prefix">Answer:</span>
+                        </p>
+                        <!-- 
+                            TODO - Begin Answer 
+                        -->
+                        <p>The error in the provided code snippet is related to the missing itemprop="name" attribute within the element. In structured data using Schema.org, the itemprop="name" attribute is essential to specify the name of the product.</p>
+                        <!-- 
+                            End Answer
+                        -->
+                    </div>
+                </li>
+                <li id="xmlValidate" class="questionContainer">
+                    <div class="prompt">
+                        <p>
+                            <span class="prefix">Prompt:</span> The attached file xml/productFeed.xml is not quite right. Make changes to the file that you think are necessary to make it valid. Write a message to your client explaining what issues you found that they need to fix. Here is the <a href="https://knowledge.bazaarvoice.com/wp-content/conversations/en_US/Collect/product_feed.html">Knowledge Base section</a> on product feeds. This <a href="https://knowledge.bazaarvoice.com/wp-content/conversations/en_US/Collect/product_feed.html#step-3-validate-the-feed">section on validation</a> will be particularly useful.
+                        </p>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            <span class="prefix">Answer:</span>
+                        </p>
+                        <!-- 
+                            TODO - Begin Answer 
+                        -->
+                        <p>I hope this message finds you well. I've reviewed the XML feed file "xml/productFeed.xml" and identified an issue: there is a missing closing tag for the "Feed" element at the end of the file.
+                            To make the XML valid, please add the closing </Feed> tag immediately before the end of the file.                            
+                            If you have any questions or need further assistance with this correction, please feel free to reach out. Ensuring the presence of this closing tag is crucial for the XML feed's validity.                            
+                            Thank you for your attention to this matter.</p>
+                        <!-- 
+                            End Answer
+                        -->
+                    </div>
+                </li>
+                
+                <li id="schemaOrg" class="questionContainer">
+                    <div class="prompt">
+                        <p>
+                            <span class="prefix">Prompt:</span> Please explain - to a non-technical person - the difference between server side and client side rendering. Be sure to include how templates and AJAX relate to the different ways to render content.
+                        </p>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            <span class="prefix">Answer:</span>
+                        </p>
+                        <!--TODO - Begin Answer -->
+                        <p>Server-Side Rendering (SSR): It's like ordering a complete meal at a restaurant, and it's served to you as is. You don't get to customize it.
+                            <br>
+                            Client-Side Rendering (CSR): It's like going to a buffet where you choose what dishes to put on your plate and how you arrange them. You have more control and can change things on the go.            
+                            <br>                
+                            Templates: Think of them as cooking recipes. In SSR, the chef follows a recipe to make your meal. In CSR, you have ingredients (components) and can create your own dish.  
+                            <br>                          
+                            AJAX: It's like a waiter who brings you more dishes (data) while you're already eating without disrupting your meal (page). Both SSR and CSR can use this waiter to make the experience more dynamic.</p>
+                        <!-- 
+                            End Answer
+                        -->
+                    </div>
+                </li>
+            </ol>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/syntaxhighlighter/scripts/shCore.js"></script>
+        <script type="text/javascript" src="js/syntaxhighlighter/scripts/shBrushXml.js"></script>
+        <script type="text/javascript" src="js/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+        <script type="text/javascript" src="js/questions.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+
+</html>
